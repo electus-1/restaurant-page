@@ -1,0 +1,44 @@
+:root {
+  --header-bg-color: #faf3f0;
+  --header-nav-font-color: #7a316f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+#content {
+  background-image: url("img/cat-macarons.jpg");
+}
+
+#header {
+  background-color: var(--header-bg-color);
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px;
+}
+
+#header-nav {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+#header > #title {
+  color: #cd6688;
+}
+
+#header-nav > .header-nav-item {
+  color: var(--header-nav-font-color);
+  background-color: var(--header-bg-color);
+  border-color: var(--header-bg-color);
+  outline: none;
+  border-style: none;
+}
+
+#header-nav > .header-nav-item.selected {
+  border-bottom: 2px solid var(--header-nav-font-color);
+}
