@@ -1,14 +1,16 @@
 :root {
-  --header-bg-color: #faf3f0;
-  --header-nav-font-color: #7a316f;
+  --header-bg-color: #aed8cc;
+  --header-nav-font-color: #f25287;
 }
 
 body {
   margin: 0;
   padding: 0;
-}
-#content {
-  background-image: url("img/cat-macarons.jpg");
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("img/cat-sweet-shop.png");
+  background-size: contain;
+  background-position: center;
 }
 
 #header {
@@ -29,14 +31,19 @@ body {
 
 #header > #title {
   color: #cd6688;
+  opacity: unset;
+  font-size: 2.5rem;
+  position: relative;
+  left: 20%;
 }
 
 #header-nav > .header-nav-item {
   color: var(--header-nav-font-color);
-  background-color: var(--header-bg-color);
+  background-color: transparent;
   border-color: var(--header-bg-color);
   outline: none;
   border-style: none;
+  font-size: 1.5rem;
 }
 
 #header-nav > .header-nav-item.selected {
