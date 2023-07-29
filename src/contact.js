@@ -1,1 +1,1 @@
-export default function contact(content) {}
+export default function contact() {}

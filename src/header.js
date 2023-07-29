@@ -1,7 +1,7 @@
 export default function headerComp(body) {
   const header = document.createElement("div");
   header.id = "header";
-  header.style.width = `${window.screen.availWidth}px`;
+  header.style.width = `${window.innerWidth}px`;
   body.appendChild(header);
 
   const restaurantName = document.createElement("h1");
@@ -15,6 +15,7 @@ export default function headerComp(body) {
 
   const homeNavigation = document.createElement("button");
   homeNavigation.classList.add("header-nav-item");
+  homeNavigation.classList.add("selected");
   homeNavigation.id = "home-nav-item";
   homeNavigation.innerHTML = "Home";
   headerNav.appendChild(homeNavigation);
