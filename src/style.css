@@ -2,6 +2,10 @@
   --header-bg-color: #aed8cc;
   --header-nav-font-color: #f25287;
   --header-title-font-color: #cd6688;
+  --header-bg-color-transparent: rgba(174, 216, 204, 0.8);
+}
+html {
+  font-size: 16px;
 }
 
 * {
@@ -81,9 +85,75 @@ body {
 #home {
   width: 50%;
   height: 60%;
-  background-color: rgba(174, 216, 204, 0.8);
+  background-color: var(--header-bg-color-transparent);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+#menu {
+  width: 60%;
+  height: 60%;
+  background-color: var(--header-bg-color-transparent);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20%;
+  padding: 36px;
+  overflow-y: scroll;
+}
+
+#menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+#menu::-webkit-scrollbar-track {
+  background-color: var(--header-bg-color);
+}
+
+#menu::-webkit-scrollbar-track:hover {
+  background-color: var(--header-bg-color-transparent);
+}
+
+#menu::-webkit-scrollbar-thumb {
+  background-color: var(--header-nav-font-color);
+  border-radius: 36px;
+}
+
+#menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(242, 82, 135, 0.7);
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  width: 40%;
+}
+
+.menu-item:hover {
+  background-color: rgba(174, 216, 204, 1);
+  cursor: pointer;
+}
+
+.menu-item-img {
+  object-fit: scale-down;
+  width: 112px;
+  height: 63px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.menu-item-title {
+  color: var(--header-title-font-color);
+  font-size: 2rem;
+}
+
+.menu-item-text {
+  color: var(--header-nav-font-color);
+  font-size: 1.2rem;
 }

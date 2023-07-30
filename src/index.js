@@ -4,7 +4,6 @@ import contact from "./contact";
 import headerComp from "./header.js";
 import contentComp from "./content.js";
 import bgImage from "./img/cat-sweet-shop.png";
-
 import "./style.css";
 
 const navIdentifiers = {
@@ -32,7 +31,7 @@ navItems.forEach((navItem) =>
     navItem.classList.add("selected");
     Object.keys(navIdentifiers).forEach((identifier) => {
       if (navItem.id === identifier) {
-        content.childNodes.forEach((child) => child.remove());
+        content.lastChild.remove();
         content.appendChild(navIdentifiers[identifier]());
       }
     });
