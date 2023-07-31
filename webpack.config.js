@@ -15,8 +15,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      template: "src/index.html",
       title: "Meowlicious Sweet Shop",
-      lang: en,
+      lang: "en",
     }),
   ],
   devServer: {
