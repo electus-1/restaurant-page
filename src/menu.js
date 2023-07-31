@@ -51,7 +51,6 @@ const images = {
 export default function menu() {
   const menuContent = document.createElement("div");
   menuContent.id = "menu";
-  menuContent.classList.add("container");
   menuItems.forEach((menuItem) => {
     menuContent.appendChild(
       menuItemComp(menuItem.title, images[menuItem.img], menuItem.desc)
