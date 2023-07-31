@@ -16,6 +16,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Meowlicious Sweet Shop",
+      lang: en,
     }),
   ],
   devServer: {
